@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note-Taking-App</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <h1>
+   NOTE TAKING APP
+  </h1>
+
+  <main>
+
+    <form id="form1" action="/addnote" method="POST">
+      <input type="text" class="input" name="newnote" placeholder=" ADD NOTE" />
+      <button id="addbtn"> ADD </button>
+
+    </form>
+
+    <div class="boxes">
+
+      {{#each notes}}
+      <div class="box">
+            
+        <span class="item">{{item}}</span>
+        <div id="form">
+    
+          <form id="form2" action="/deletenote/{{id}}" method="POST">
+            <button  id="delbtn" type='submit'> delete </button>
+          </form>
+
+        </div>
+      </div>
+      {{/each}}
+
+
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>

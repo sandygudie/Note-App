@@ -1,0 +1,74 @@
+body{
+ margin:0;
+ padding:0;
+ text-align: center;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+line-height: 25px;}
+
+h1{
+    font-size: 30px;
+    margin-top:64px;
+    line-height: 2;
+}
+
+#form1{
+    margin: auto;
+}
+
+#form2{
+  display:inline-block;
+  float:right
+}
+
+#form{
+    display:inline-block;
+    float:right
+  }
+
+
+input[type ="text"]{
+    padding:15px;
+    width:40%
+}
+#addbtn{  
+    width:100px;
+    padding:15px;
+    
+}
+
+.boxes{
+    width: 650px;
+    text-align: left;
+    margin-left: 22em;
+}
+
+.box{
+    margin:30px 0px;
+    /* border-bottom:1px solid gray; */
+    padding:20px;
+    /* background-color: rgb(224, 220, 220); */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
+    /* padding: 15px */
+
+}
+#delbtn{
+    /* width:100px;
+    padding:5px;
+    margin: 10px; */
+    display:inline-block
+}
+#editbtn{
+    /* width:100px;
+    padding:5px;
+    margin: 10px; */
+    /
+}
+span{
+    font-size: 15px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
